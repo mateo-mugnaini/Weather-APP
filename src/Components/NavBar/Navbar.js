@@ -22,11 +22,11 @@ const Navbar = ({ handleSubmit, handleInputChange, city }) => {
             type="text"
             value={city}
             onChange={handleInputChange}
-            placeholder="Buscar ciudad"
+            placeholder="Search City"
             className={styles.InputBuscador}
           />
           <button type="submit" className={styles.Btn_Buscar}>
-            Buscar
+            Search
           </button>
         </form>
       </div>

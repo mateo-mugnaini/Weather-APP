@@ -1,0 +1,66 @@
+/* Estilos generales */
+.Navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  align-items: center;
+  /* padding: 10px; */
+  background-color: #f5f5f5aa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del botón "Back" */
+.Contenedor_Btn {
+  margin-right: 10px;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+}
+
+.Link:hover {
+  color: red;
+}
+
+/* Estilos del logo */
+
+.Logo {
+  height: 40px;
+}
+
+/* Estilos del buscador */
+.Contenedor_Buscador {
+  display: flex;
+  align-items: center;
+}
+
+.Buscador {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.InputBuscador {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: none;
+  flex: 1;
+}
+
+.Btn_Buscar {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Btn_Buscar:hover {
+  background-color: #45a048;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Titillium+Web:wght@400;600&display=swap');
+
+.Contenedor_General {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Fondo */
+    background-image: url("../../Assets/LandingPage/Fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* TITULO */
+.Titulo {
+    font-size: 5rem;
+    font-family: "Titillium Web";
+    color: white;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* BOTON */
+.Contenedor_Btn {
+    display: flex;
+    justify-content: center;
+}
+
+.Btn {
+    width: 5rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: .2rem white solid;
+    color: white;
+    transition: width 0.5s, font-size 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.Btn:hover {
+    width: 7rem;
+    font-size: 3rem;
+}
+
+
+.Link{
+    text-decoration: none;
+}

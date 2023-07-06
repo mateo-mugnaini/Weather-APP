@@ -30,8 +30,12 @@ const Home = () => {
 
       const response = await axios.get(url);
 
+      console.log(response.data);
+
       if (response.status === 200) {
         const { location, current } = response.data;
+
+        const ubicacionGeneral = response.data.location;
 
         const lastUpdated = current.last_updated;
 
@@ -50,8 +54,12 @@ const Home = () => {
           city: location.name,
           country: location.country,
           temperature: current.temp_c,
+          humidity: current.humidity,
           time: horaDesarmada,
           condition: current.condition,
+          ubicacion: ubicacionGeneral,
+          wind_dir: current.wind_dir,
+          wind_kph: current.wind_kph,
         });
         setError("");
       } else {

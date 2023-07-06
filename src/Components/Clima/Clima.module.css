@@ -50,14 +50,17 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .Hora {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 }
 
 
@@ -67,6 +70,8 @@
 
 .Contenido{
     font-size: 1.5rem;
+    margin: 0;
+
 }
 
 .error{
@@ -80,4 +85,20 @@
     border: 0.2rem black solid;
     border-radius: 2rem;
 
+}
+
+
+.Ubicacion{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: fit-content;
+    
+}
+
+.Contenido2{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: end;
+    
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Titillium+Web:wght@400;600&display=swap');
 
-.Contenedor_General{
+.Contenedor_General {
     display: flex;
     flex-direction: column;
     /* Fondo */
@@ -8,4 +8,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed; 
 }

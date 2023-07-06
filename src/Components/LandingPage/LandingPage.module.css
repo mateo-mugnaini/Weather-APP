@@ -19,15 +19,25 @@
     text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
+.Subtitulo{
+    font-size: 2rem;
+    font-family: "Titillium Web";
+    color: white;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+
+}
+
 /* BOTON */
 .Contenedor_Btn {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center
 }
 
 .Btn {
-    width: 5rem;
-    font-size: 2rem;
+    width: 9rem;
+    font-size: 3rem;
     background-color: transparent;
     border: .2rem white solid;
     color: white;
@@ -35,7 +45,7 @@
 }
 
 .Btn:hover {
-    width: 7rem;
+    width: 12rem;
     font-size: 3rem;
 }
 

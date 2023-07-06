@@ -20,7 +20,7 @@ const Home = () => {
 
     try {
       if (city === "") {
-        setError("⛔ No has ingresado ninguna ciudad ⛔");
+        setError("⛔ You have not entered any city ⛔");
         setWeatherData(null);
         return;
       }
@@ -56,12 +56,12 @@ const Home = () => {
         setError("");
       } else {
         setWeatherData(null);
-        setError("⛔ No se encontraron datos para la ciudad especificada ⛔");
+        setError("⛔ No data found for the specified city ⛔");
       }
     } catch (error) {
       console.error("Error:", error);
       setWeatherData(null);
-      setError("⛔ Hay un error de tipeo. Corríjelo y vuelve a buscar ⛔");
+      setError("⛔ There is a typo. Please correct it and search again. ⛔");
     }
   };
 

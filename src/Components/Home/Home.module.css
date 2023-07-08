@@ -3,10 +3,17 @@
 .Contenedor_General {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     /* Fondo */
     background-image: url("../../Assets/LandingPage/Fondo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     background-attachment: fixed; 
+}
+
+.Contenedor_Clima{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
 }

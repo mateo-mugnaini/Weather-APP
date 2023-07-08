@@ -16,14 +16,14 @@
     font-size: 5rem;
     font-family: "Titillium Web";
     color: white;
-    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(255, 234, 0, 0.5);
 }
 
 .Subtitulo{
     font-size: 2rem;
     font-family: "Titillium Web";
     color: white;
-    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(255, 234, 0, 0.5);
 
 }
 
@@ -47,6 +47,7 @@
 .Btn:hover {
     width: 12rem;
     font-size: 3rem;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(255, 234, 0, 0.5);
 }
 
 

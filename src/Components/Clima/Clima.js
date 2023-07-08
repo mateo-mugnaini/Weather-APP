@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Clima.module.css";
 
+import Hora from "./Hora";
+
 const Clima = ({ weatherData, error }) => {
   console.log({ weatherData });
   return (
@@ -8,57 +10,65 @@ const Clima = ({ weatherData, error }) => {
       {error && <p className={styles.error}>{error}</p>}
       {weatherData && (
         <>
-          <div className={styles.Info_Hora}>
-            <div className={styles.Hora}>
-              <h1 className={styles.Titulos}>{weatherData.time}</h1>
-            </div>
+          <div className={styles.Contenedor_Hora}>
+            <h2>
+              <Hora />
+            </h2>
+          </div>
+          <div className={styles.Contenedor_Icon_Clima}>
+            <img
+              src={weatherData.condition.icon}
+              alt={weatherData.condition.text}
+              className={styles.Icon_Clima}
+            />
+            <h1 className={styles.Contenido}>{weatherData.condition.text}</h1>
           </div>
           {/* ---------------------- GEOGRAFIA ---------------------- */}
           <div className={styles.Contenedor2}>
-            <div className={styles.Info_Geografica}>
-              <div className={styles.Geografia}>
+            <div className={styles.Contenedor_Contenido}>
+              <div className={styles.Contenido}>
                 <h1 className={styles.Titulos}>City:</h1>
-                <p className={styles.Contenido}>{weatherData.city}</p>
+                <h2 className={styles.SubTitlulo}>{weatherData.city}</h2>
               </div>
-              <div className={styles.Geografia}>
+              <div className={styles.Contenido}>
                 <h1 className={styles.Titulos}>Country:</h1>
-                <p className={styles.Contenido}>{weatherData.country}</p>
+                <h2 className={styles.SubTitlulo}>{weatherData.country}</h2>
               </div>
-              <div className={styles.Geografia}>
+              <div className={styles.Contenido}>
                 <h1 className={styles.Titulos}>Location:</h1>
                 <div className={styles.Ubicacion}>
-                  <p className={styles.Contenido2}>
+                  <h2 className={styles.Contenido2}>
                     Latitude: {weatherData.ubicacion.lat}°
-                  </p>
-                  <p className={styles.Contenido2}>
+                  </h2>
+                  <h2 className={styles.Contenido2}>
                     Length:{weatherData?.ubicacion.lon}°
-                  </p>
+                  </h2>
                 </div>
               </div>
             </div>
             {/* ---------------------- CLIMA ---------------------- */}
-            <div className={styles.Info_Clima}>
-              <div className={styles.Clima}>
+            <div className={styles.Contenedor_Contenido}>
+              <div className={styles.Contenido}>
                 <h1 className={styles.Titulos}>Temperature:</h1>
-                <p className={styles.Contenido}>{weatherData.temperature}°C</p>
+                <h2 className={styles.SubTitlulo}>
+                  {weatherData.temperature}°C
+                </h2>
               </div>
-              <div className={styles.Clima}>
+              <div className={styles.Contenido}>
                 <h1 className={styles.Titulos}>Humidity:</h1>
-                <p className={styles.Contenido}>{weatherData.humidity}%</p>
+                <h2 className={styles.SubTitlulo}>{weatherData.humidity}%</h2>
               </div>
-              <div className={styles.Clima}>
+
+              <div className={styles.Contenido}>
                 <h1 className={styles.Titulos}>Wind:</h1>
-                <p className={styles.Contenido}>{weatherData.wind_dir}</p>
-                <p className={styles.Contenido}>{weatherData.wind_kph} k/h</p>
-              </div>
-              <div className={styles.Clima}>
-                <h1 className={styles.Titulos}>Condition:</h1>
-                <p className={styles.Contenido}>{weatherData.condition.text}</p>
-                <img
-                  src={weatherData.condition.icon}
-                  alt={weatherData.condition.text}
-                  className={styles.weatherIcon}
-                />
+                <div className={styles.Ubicacion}>
+                  <h2 className={styles.Contenido2}>
+                    {weatherData.wind_kph} k/h
+                  </h2>
+                  <h2 className={styles.Contenido2}>
+                    Dir: {weatherData.wind_dir}
+                  </h2>
+                </div>
               </div>
             </div>
           </div>

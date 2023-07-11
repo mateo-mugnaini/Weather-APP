@@ -28,9 +28,9 @@ const Navbar = ({ handleSubmit, handleInputChange, city }) => {
         </form>
       </div>
       <div className={styles.Contenedor_Btn}>
-        <Link className={styles.Link} to="/comments">
+        {/* <Link className={styles.Link} to="/comments">
           <h2>Comments</h2>
-        </Link>
+        </Link> */}
         <Link className={styles.Link} to="/">
           <h2>Back</h2>
         </Link>

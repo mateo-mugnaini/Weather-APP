@@ -30,10 +30,8 @@ const Home = () => {
 
       const response = await axios.get(url);
 
-      console.log(response.data);
-
       if (response.status === 200) {
-        const { location, current } = response.data;
+        const { location, current, forecast } = response.data;
 
         const ubicacionGeneral = response.data.location;
 
@@ -60,6 +58,7 @@ const Home = () => {
           ubicacion: ubicacionGeneral,
           wind_dir: current.wind_dir,
           wind_kph: current.wind_kph,
+          extendido: forecast.forecastday,
         });
         setError("");
       } else {

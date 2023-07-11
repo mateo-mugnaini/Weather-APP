@@ -1,19 +1,18 @@
 import React from "react";
 import styles from "./Clima.module.css";
 
-import Hora from "./Hora";
+// import Hora from "./Hora_Actual";
 
 const Clima = ({ weatherData, error }) => {
-  console.log({ weatherData });
   return (
     <div className={styles.Contenedor_General}>
       {error && <p className={styles.error}>{error}</p>}
       {weatherData && (
         <>
           <div className={styles.Contenedor_Hora}>
-            <h2>
+            {/* <h2>
               <Hora />
-            </h2>
+            </h2> */}
           </div>
           <div className={styles.Contenedor_Icon_Clima}>
             <img
@@ -71,6 +70,27 @@ const Clima = ({ weatherData, error }) => {
                 </div>
               </div>
             </div>
+          </div>
+          {/* ---------------------- CLIMA EXTENDIDO ---------------------- */}
+          <h1 className={styles.titulo_Extendido}>Extended day forecast</h1>
+          <div className={styles.Contenedor_Extendido}>
+            {weatherData.extendido[0].hour.map((e) => (
+              <div className={styles.extendido}>
+                <img
+                  className={styles.icon_Extendido}
+                  src={e.condition.icon}
+                  alt={e.condition.text}
+                />
+                <h4 className={styles.text_Extendido}>{e.condition.text}</h4>
+                <div className={styles.hora_Extendido}>
+                  <h3>{e.time[11]}</h3>
+                  <h3>{e.time[12]}</h3>
+                  <h3>{e.time[13]}</h3>
+                  <h3>{e.time[14]}</h3>
+                  <h3>{e.time[15]}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </>
       )}

@@ -6,27 +6,27 @@ Weather App es una aplicación del clima.
 Como usuario vas a poder obtener informacion precisa sobre el clima en cualquier parte del mundo. 
 Informacion que se muestra:
 
-- Ubicacion: 
-  📌 Ciudad
-  📌 Pais
-  📌 Latitud / Longitud
+- Ubicacion:  <br>
+  📌 Ciudad <br>
+  📌 Pais <br>
+  📌 Latitud / Longitud <br>
 
-- Clima:
-  📌 Temperatura
-  📌 Humedad
-  📌 Vientos
-  📌 Pronostico detallado del dia
+- Clima: <br>
+  📌 Temperatura <br>
+  📌 Humedad <br>
+  📌 Vientos <br>
+  📌 Pronostico detallado del dia <br>
 
 
 # Tecnologias
 
--FRONT END:
-  📌 HTML
-  📌 Javascript
-  📌 CSS
-  📌 React.JS
+- FRONT END: <br>
+  📌 HTML <br>
+  📌 Javascript <br>
+  📌 CSS <br>
+  📌 React.JS <br>
 
-- DEPLOY:
+- DEPLOY: <br>
   📌 Vercel
 
 # ¡Muchas gracias por leer!

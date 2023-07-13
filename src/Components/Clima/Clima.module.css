@@ -88,3 +88,48 @@
   display: flex;
   margin-top: -1rem;
 }
+
+
+
+@media screen and (max-width: 400px) {
+  .Contenedor_Icon_Clima{
+    display: flex;
+    flex-direction: column;
+  }
+  .Contenido_Clima{
+    margin-top: -3rem;
+  }
+  .Contenedor2{
+    display: flex;
+    flex-direction: column;
+  }
+  .Contenedor_Contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Titulos{
+    font-size: 1.3rem;
+  }
+  .SubTitlulo{
+    font-size: 1rem;
+  }
+  .Contenido2{
+    font-size: 1rem;
+  }
+  .Contenedor_Extendido{
+    gap: 0;
+  }
+  .titulo_Extendido{
+  font-size: 1.5rem;
+  }
+  .icon_Extendido{
+    margin-bottom: -2rem;
+  }
+  .text_Extendido{
+    margin-bottom: 0;
+  }
+
+
+
+}

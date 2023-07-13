@@ -3,7 +3,7 @@
 .Contenedor_General {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     /* Fondo */
     background-image: url("../../Assets/LandingPage/Fondo.jpeg");
     background-repeat: no-repeat;
@@ -17,4 +17,10 @@
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+    .Contenedor_General {
+        background-size: cover;
+    }
 }

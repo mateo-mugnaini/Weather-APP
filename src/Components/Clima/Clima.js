@@ -20,7 +20,9 @@ const Clima = ({ weatherData, error }) => {
               alt={weatherData.condition.text}
               className={styles.Icon_Clima}
             />
-            <h1 className={styles.Contenido}>{weatherData.condition.text}</h1>
+            <h1 className={styles.Contenido_Clima}>
+              {weatherData.condition.text}
+            </h1>
           </div>
           {/* ---------------------- GEOGRAFIA ---------------------- */}
           <div className={styles.Contenedor2}>

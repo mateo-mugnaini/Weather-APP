@@ -65,7 +65,38 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+  .Navbar {
+    height: fit-content;
+  }
+  
+  .Logo {
+    height: 30px;
+  }
+  .InputBuscador {
+    font-size: 14px;
+    border: none;
+    border-bottom-left-radius:0.4rem;
+    border-top-left-radius:0.4rem;
+    width: 150px;
+  }
+  .Btn_Buscar {
+    font-size: 14px;
+    background-color: #E8CE51;
+    color: black;
+    border: none;
+    border-bottom-right-radius:0.4rem;
+    border-top-right-radius:0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .Contenedor_Btn {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .Navbar {
     height: fit-content;
   }

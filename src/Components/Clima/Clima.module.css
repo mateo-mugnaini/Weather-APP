@@ -90,8 +90,40 @@
 }
 
 
+@media screen and (max-width: 850px) {
+  .Contenedor2{
+    display: flex;
+    flex-direction: column;
+  }
+  .Contenedor_Contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Titulos{
+    font-size: 2rem;
+  }
+  .SubTitlulo{
+    font-size: 1.5rem;
+  }
+  .Contenido2{
+    font-size: 1.5rem;
+  }
+  .Contenedor_Extendido{
+    gap: 1rem;
+  }
+  .titulo_Extendido{
+  font-size: 2rem;
+  }
+  .icon_Extendido{
+    margin-bottom: -2rem;
+  }
+  .text_Extendido{
+    margin-bottom: 0;
+  }
+}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .Contenedor_Icon_Clima{
     display: flex;
     flex-direction: column;
@@ -129,7 +161,4 @@
   .text_Extendido{
     margin-bottom: 0;
   }
-
-
-
 }
